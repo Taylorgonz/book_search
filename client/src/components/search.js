@@ -35,18 +35,23 @@ function Search() {
                     }} />
                 </div>
             </div>
-            <div className="row">
-                <div className="displayCard col-12">
-                    {books &&
-                        books.map((book, index) => (
-                            <div>
-                                <h3> {book.volumeInfo.title}</h3>
-                                <img key={index} src={book.volumeInfo.imageLinks.smallThumbnail} style={{height: "50px;"}} />
-                            </div>
-                        ))
-                    }
-                </div>
-            </div>
+            <div className="searchResponse row d-flex">
+                {books &&
+                    books.map((book, index) => (
+
+
+                        <div key={index} className="card displayCard col-3" >
+                            <img className="card-img-top cardImage" src={book.volumeInfo.imageLinks.smallThumbnail} alt="Card image cap"/>
+                                <div className="card-body">
+                                    <h5 className="card-title cardTitle">{book.volumeInfo.title}</h5>
+                                    <textarea readonly={true} className="card-text">{book.volumeInfo.description}</textarea>
+                                    <a href={book.volumeInfo.infoLink} target="_blank" className="btn btn-primary">More info!</a>
+                                </div>
+                        </div>
+                    ))
+                }
+                        </div>
+            
 
 
         </div>
