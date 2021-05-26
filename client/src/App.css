@@ -14,14 +14,24 @@ div.jumbotron {
 }
 
 .searchInput {
-  display: inline-block;
+  display:flex;
+  justify-content:center;
+  align-items: center;
 }
 .search {
-  display: block;
   text-align: center;
+  display: block;
 }
-.searchBar {
+
+
+input.searchBar {
+  display: block;
   width: 300px;
   border: 2px solid rgb(170, 137, 49);
   border-radius: 12px;
+  
+}
+
+.displayCard {
+  display: flex;
 }

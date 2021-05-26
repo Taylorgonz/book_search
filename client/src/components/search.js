@@ -19,13 +19,13 @@ function Search() {
             })
     }
 
-    console.log(search)
-    console.log(books)
+
+    console.log(books);
 
 
 
     return (
-        <div className="d-flex justify-content-center container">
+        <div className="container">
             <div class="row">
                 <div class="searchInput col-12">
                     <label className="search"> Search</label>
@@ -35,17 +35,17 @@ function Search() {
                     }} />
                 </div>
             </div>
-            <div className="d-flex row">
-                <div className="col-12">
-                    { books.length !== 0 ?
+            <div className="row">
+                <div className="displayCard col-12">
+                    {books &&
                         books.map((book, index) => (
-                            <h3> {book.volumeInfo.title}</h3>
+                            <div>
+                                <h3> {book.volumeInfo.title}</h3>
+                                <img key={index} src={book.volumeInfo.imageLinks.smallThumbnail} style={{height: "50px;"}} />
+                            </div>
                         ))
-                        : <div/>
                     }
-
                 </div>
-
             </div>
 
 
