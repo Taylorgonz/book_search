@@ -35,23 +35,26 @@ function Search() {
                     }} />
                 </div>
             </div>
-            <div className="searchResponse row d-flex">
+            <div className="searchResponse row d-flex justify-content-center">
                 {books &&
                     books.map((book, index) => (
-
+                        
 
                         <div key={index} className="card displayCard col-3" >
-                            <img className="card-img-top cardImage" src={book.volumeInfo.imageLinks.smallThumbnail} alt="Card image cap"/>
-                                <div className="card-body">
-                                    <h5 className="card-title cardTitle">{book.volumeInfo.title}</h5>
-                                    <textarea readonly={true} className="card-text">{book.volumeInfo.description}</textarea>
-                                    <a href={book.volumeInfo.infoLink} target="_blank" className="btn btn-primary">More info!</a>
+                            <img className="card-img-top cardImage" src={book.volumeInfo.imageLinks.smallThumbnail} alt="Card image cap" />
+                            <div className="card-body">
+                                <h5 className="card-title text-center cardTitle">{book.volumeInfo.title}</h5>
+                                <textarea readOnly={true} className="card-text">{book.volumeInfo.description}</textarea>
+                                <div className="d-flex justify-content-center">
+                                    <a href={book.volumeInfo.infoLink} target="_blank" className="btn btn-link">More info!</a>
+                                    <button className="btn btn-success"> Save!</button>
                                 </div>
+                            </div>
                         </div>
                     ))
                 }
-                        </div>
-            
+            </div>
+
 
 
         </div>
