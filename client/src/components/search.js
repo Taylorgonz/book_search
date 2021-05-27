@@ -40,7 +40,7 @@ function Search() {
                     books.map((book, index) => (
 
 
-                        <div key={index} className="card displayCard col-xs-12 col-3" >
+                        <div key={index} className="card displayCard m-30 xs-m-0 col-xs-12 col-3" >
                             <img className="card-img-top cardImage" src={book.volumeInfo.imageLinks.smallThumbnail} alt="Card image cap" />
                             <div className="card-body">
                                 <h5 className="card-title text-center cardTitle">{book.volumeInfo.title}</h5>
