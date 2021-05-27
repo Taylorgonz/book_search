@@ -35,6 +35,7 @@ input.searchBar {
 
 div.displayCard {
   display: flex;
+  margin: 20px;
   border: 2px solid rgb(170, 137, 49);
   border-radius: 25px;
 }
