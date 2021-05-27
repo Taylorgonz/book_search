@@ -40,7 +40,7 @@ function Search() {
                     books.map((book, index) => (
 
 
-                        <div key={index} className="card displayCard m-30 col-s-12 col-md-3 " >
+                        <div key={index} className="card displayCard m-30 col-s-12 col-md-2 " >
                             {book.volumeInfo.imageLinks  ? <img className="card-img-top cardImage" src={book.volumeInfo.imageLinks.thumbnail} alt="Card image cap" />
                             : <img className="card-img-top cardImage" src="http://static1.squarespace.com/static/52f29ad2e4b02d1f9d476561/5390b6b6e4b052006822dd29/5390b747e4b06374d7eb79fb/1401993081305/noCoverArt.gif?format=1500w" alt="Card image cap" />
                             }
