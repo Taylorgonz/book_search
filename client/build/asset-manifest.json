@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8e11fca6.chunk.css",
+    "main.js": "/static/js/main.74621472.chunk.js",
+    "main.js.map": "/static/js/main.74621472.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.992eac29.js",
+    "runtime-main.js.map": "/static/js/runtime-main.992eac29.js.map",
+    "static/css/2.99e8d062.chunk.css": "/static/css/2.99e8d062.chunk.css",
+    "static/js/2.bf6da182.chunk.js": "/static/js/2.bf6da182.chunk.js",
+    "static/js/2.bf6da182.chunk.js.map": "/static/js/2.bf6da182.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.ac862b279fbb33c9dcdef79b2db099ef.js": "/precache-manifest.ac862b279fbb33c9dcdef79b2db099ef.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.99e8d062.chunk.css.map": "/static/css/2.99e8d062.chunk.css.map",
+    "static/css/main.8e11fca6.chunk.css.map": "/static/css/main.8e11fca6.chunk.css.map",
+    "static/js/2.bf6da182.chunk.js.LICENSE.txt": "/static/js/2.bf6da182.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/static/media/creative-assortment-with-different-books.3581af8b.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.992eac29.js",
+    "static/css/2.99e8d062.chunk.css",
+    "static/js/2.bf6da182.chunk.js",
+    "static/css/main.8e11fca6.chunk.css",
+    "static/js/main.74621472.chunk.js"
+  ]
+}

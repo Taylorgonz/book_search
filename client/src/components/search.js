@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import api from "../utils/api";
+import API from "../utils/api";
 import axios from 'axios'
 import { set } from "mongoose";
 const key = "AIzaSyCt1rfcVmMgd_zKGCFIs6YZ9iny9cIfV-Y"
@@ -19,6 +19,17 @@ function Search() {
             })
     }
 
+    const saveBook = (e) => {
+        API.saveBook({
+            title: e.volumeInfo.title,
+            author: e.volumeInfo.authors[0],
+            description: e.volumeInfo.description,
+            image: e.volumeInfo.imageLinks.thumbnail,
+            link: e.volumeInfo.infoLink
+
+        })
+        console.log(e.volumeInfo)
+    }
 
     // console.log(books);
 
@@ -50,7 +61,7 @@ function Search() {
                                 <textarea readOnly={true} className="card-text">{book.volumeInfo.description}</textarea>
                                 <div className="d-flex justify-content-center">
                                     <a href={book.volumeInfo.infoLink} target="_blank" className="btn btn-link">More info!</a>
-                                    <button className="btn btn-success"> Save!</button>
+                                    <button className="btn btn-success" onClick={() => saveBook(book)}> Save!</button>
                                 </div>
                             </div>
                         </div>
